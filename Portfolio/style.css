@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  font-family:Helvetica,Sans-serif;
+  overflow-x:hidden;
+
+}
+h1 {
+  text-align:center;
+  background-color: black;
+  color: white
+}
+.page {
+  width:100vw;
+  height:100vh;
+  perspective:1px;
+  perspective-origin: center center;
+  overflow-x:hidden;
+}
+.overflow {
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  top:100vh;
+  background-color:black;
+}
+#parallax {
+  transform-style: preserve-3d;
+  height: 120vh;
+}
+
+.keyart_layer {
+  background-position: right;
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  transform-style: preserve-3d;
+  height: 120vh;
+}
+
+#keyart-0 {
+  background-image: url('BG/main1.jpg');
+  transform:translate3d( -11px, -46px, -1.3px) scale(2.3);
+}
+
+#keyart-1 {
+  background-image: url('BG/2.png');
+  width: 500px;
+  height: 550px;
+
+
+
+}
+
+#keyart-2 {
+  background-image: url('');
+  width: 600px;
+  height: 650px;
+  left: 800px;
+
+
+}
+
+@keyframes slide_Left{
+    from {
+        transform: translateX(-600px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide_Right{
+    from {
+        transform: translateX(600px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+#keyart-1 {
+    animation-name: slide_Left;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:
+
+}
+
+#keyart-2 {
+    animation-name: slide_Right;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:
+
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+header .Group {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+
+
+
+#keyart-8 {
+  background-image: url('moon.png');
+  transform:translate3d(0, 180px,.45px) scale(.1);
+}
+#keyart-7 {
+  background-image: url('mountains_behind.png');
+  transform:translate3d(0, 180px,.45px) scale(.8);
+}
+#keyart-6 {
+  background-image: url('mountains_front.png');
+  transform:translate3d(0, 180px,.45px) scale(.8);
+}

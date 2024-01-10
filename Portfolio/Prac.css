@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('BG/best.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+section {
+    min-height: 100vh;
+    place-items: center;
+    align-content: center;
+    display: grid;
+
+}
+
+@keyframes slide_Left{
+    from {
+        transform: translateX(-600px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes slide_Right{
+    from {
+        transform: translateX(600px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.heading {
+    animation-name: slide_Left;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:
+}
+
+.heading1 {
+    animation-name: slide_Left;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:
+}
+
+.heading2 {
+    animation-name: slide_Left;
+    animation-duration: 1.1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:
+}
+
+.heading3 {
+    animation-name: slide_Left;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:
+}
+
+.heading4 {
+    animation-name: slide_Right;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:
+}
+
+.heading5 {
+    animation-name: slide_Right;
+    animation-duration: 1.1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:
+}
+
+.heading6 {
+    animation-name: slide_Right;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:
+    padding: 100px;
+}
+
+.heading7 {
+    animation-name: slide_Right;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:
+}
+
+.eco {
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.eco:hover, eco.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+.container p{
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+    color: rgba(0,0,0,0.6);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+    padding: 70px 50px 0 50px;
+    width: 25%;
+    max-width: 350px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card .profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.card .profile-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .content{
+    text-align: center;
+}
+
+.card .content h3{
+    font-size: 1.4rem;
+    margin-top: 25px;
+    color: rgba(0,0,0,0.9);
+}
+
+.card .content p{
+    color: rgba(0,0,0,0.7);
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.social-media{
+    margin-top: 30px;
+}
+
+.social-media i{
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.8);
+    background-color: #ebeaea;
+    padding: 15px;
+    margin: 0 3px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.social-media i:hover{
+    background-color: #dddddd;
+    color: rgba(0,0,0,0.9);
+}
+
+@media (max-width: 969px) {
+    .card-wrapper{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-wrapper{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 100%;
+        margin: 20px;
+    }
+}
